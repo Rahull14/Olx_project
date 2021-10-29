@@ -30,7 +30,7 @@ function Header() {
           </div>
         </div>
         <div className="language">
-          <span> ENGLISH </span>
+          <span> Malayalam </span>
           <Arrow></Arrow>
         </div>
         <div className="loginPage">
