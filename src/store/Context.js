@@ -1,17 +1,15 @@
-import { createContext,useState} from 'react'
+import { createContext, useState } from "react";
 
-export const FirebaseContext =createContext(null)
+export const FirebaseContext = createContext(null);
 
+export const AuthContext = createContext(null); //second method of creating a context. using for user authentication.
 
-export const AuthContext = createContext(null);//second method of creating a context. using for user authentication.
+export default function Context({ children }) {
+  const [user, setUser] = useState(null);
 
-
-export default function Context({Children}){
-     const [user,setUser] = useState(null)
-
-     return(
-        <AuthContext.Provider value={{user,setUser}}>
-             {Children}
-        </AuthContext.Provider>
-     )
+  return (
+    <AuthContext.Provider value={{ user, setUser }}>
+      {children}
+    </AuthContext.Provider>
+  );
 }
