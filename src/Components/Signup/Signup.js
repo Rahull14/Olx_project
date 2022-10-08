@@ -31,6 +31,9 @@ export default function Signup() {
 
   return (
     <div>
+      <div><span><a className = "backtohome" onClick={()=>{
+                history.push("/")}} href="">Back to home</a>
+        </span></div>
       <div className="signupParentDiv">
         <img width="200px" height="200px" src={Logo} alt='kananonnula'></img>
         <form onSubmit={handleSubmit}>
@@ -85,7 +88,8 @@ export default function Signup() {
           <br />
           <button>Signup</button>
         </form>
-        <a href='www.google.com'>Login</a>
+        <a className = "anchor" onClick={()=>{
+                history.push("/Login")}} href="">Login</a>
       </div>
     </div>
   );

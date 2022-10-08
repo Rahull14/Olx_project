@@ -35,4 +35,12 @@
     justify-content: center;
     cursor: pointer;
   }
+  .anchor{
+    text-decoration: none;
+  }
+  .backtohome{
+    float:right;
+    text-decoration: none;
+
+  }
   

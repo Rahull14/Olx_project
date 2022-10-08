@@ -24,6 +24,9 @@ function Login() {
 
   return (
     <div>
+      <div><span><a className = "backtohome" onClick={()=>{
+                history.push("/")}} href="">Back to home</a>
+        </span></div>
       <div className="loginParentDiv">
         <img width="200px" height="200px" src={Logo} alt="nothing"></img>
         <form onSubmit={handleLogin}>
@@ -54,7 +57,9 @@ function Login() {
           <br />
           <button>Login</button>
         </form>
-        <a href='www.google.com'>Signup</a>
+        <a className = "anchor" onClick={()=>{
+                history.push("/Signup")}} href="">Signup</a>
+
       </div>
     </div>
   );
