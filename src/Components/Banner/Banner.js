@@ -23,8 +23,9 @@ function Banner() {
         </div>
         <div className="banner">
           <img
-            src="../../../Images/banner copy.png"
+            src="https://statics.olx.in/olxin/banners/hero_bg_in_v2@1x.png"
             alt=""
+            className='bannerimage'
           />
         </div>
       </div>
