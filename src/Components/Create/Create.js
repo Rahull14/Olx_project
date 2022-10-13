@@ -26,7 +26,7 @@ const Create = () => {
             userId:user.uid,
             createdDate:date.toDateString()
           })
-          history.push('/')
+          history.push('/Olx_project')
         })
        })
   }

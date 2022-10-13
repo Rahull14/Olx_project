@@ -15,7 +15,7 @@ function Login() {
     e.preventDefault()
     firebase.auth().signInWithEmailAndPassword(email,password).then(()=>{
       //alert('Logged In')
-      history.push('/')
+      history.push('/Olx_project')
     }).catch((error)=>{
       alert(error.message)
     })
@@ -25,7 +25,7 @@ function Login() {
   return (
     <div>
       <div><span><a className = "backtohome" onClick={()=>{
-                history.push("/")}} href="">Back to home</a>
+                history.push("/Olx_project")}} href="">Back to home</a>
         </span></div>
       <div className="loginParentDiv">
         <img width="200px" height="200px" src={Logo} alt="nothing"></img>
